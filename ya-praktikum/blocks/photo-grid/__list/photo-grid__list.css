@@ -1,0 +1,4 @@
+.photo-grid__list {
+	display: flex;
+	flex-wrap: wrap;
+}

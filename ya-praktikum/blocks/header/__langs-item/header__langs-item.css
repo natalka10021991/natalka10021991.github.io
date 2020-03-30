@@ -1,0 +1,9 @@
+.header__langs-item {
+	font-size: 24px;
+	padding: 8px;
+	margin-left: 10px;
+}
+.header__langs-item:hover,
+.header__langs-item:focus {
+	text-decoration: underline;
+}

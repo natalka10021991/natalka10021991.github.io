@@ -1,0 +1,86 @@
+@import 'static/normalize.css';
+@import 'blocks/section/section.css';
+@import 'blocks/section/__description/section__description.css';
+@import 'blocks/section/_width/section_width_narrow.css';
+
+
+@import 'blocks/base/base.css';
+@import 'blocks/base/fonts.css';
+@import 'blocks/base/titles.css';
+@import 'blocks/base/links.css';
+
+
+@import 'blocks/header/header.css';
+@import 'blocks/header/__langs/header__langs.css';
+@import 'blocks/header/__langs-item/header__langs-item.css';
+@import 'blocks/header/__langs-link/header__langs-link.css';
+@import 'blocks/header/__langs-link_active/header__langs-link_active.css';
+@import 'blocks/header/__logo/header__logo.css';
+
+@import 'blocks/lead/lead.css';
+@import 'blocks/lead/__title/lead__title.css';
+@import 'blocks/lead/__description/lead__description.css';
+@import 'blocks/lead/__photo/lead__photo.css';
+@import 'blocks/lead/__image/lead__image.css';
+@import 'blocks/lead/__photo-description/lead__photo-description.css';
+
+
+@import 'blocks/intro/__title/intro__title.css';
+@import 'blocks/intro/__description/intro__description.css';
+@import 'blocks/intro/__list/intro__list.css';
+@import 'blocks/intro/__item/intro__item.css';
+@import 'blocks/intro/__item-number/intro__item-number.css';
+
+@import 'blocks/photo-grid/photo-grid.css';
+@import 'blocks/photo-grid/__list/photo-grid__list.css';
+@import 'blocks/photo-grid/__item/photo-grid__item.css';
+@import 'blocks/photo-grid/__image/photo-grid__image.css';
+
+
+@import 'blocks/places/places.css';
+@import 'blocks/places/__item/places__item.css';
+@import 'blocks/places/__item-top/places__item-top.css';
+@import 'blocks/places/__item-cell/places__item-cell.css';
+@import 'blocks/places/__link-title/places__link-title.css';
+@import 'blocks/places/__link-value/places__link-value.css';
+@import 'blocks/places/__info/places__info.css';
+@import 'blocks/places/__image/places__image.css';
+@import 'blocks/places/__description/places__description.css';
+
+
+
+@import 'blocks/video/video.css';
+@import 'blocks/video/__title/video__title.css';
+@import 'blocks/video/__list/video__list.css';
+@import 'blocks/video/__item/video__item.css';
+@import 'blocks/video/__item/_place/video__item_place_kamchatka.css';
+@import 'blocks/video/__item/_place/video__item_place_observatory.css';
+@import 'blocks/video/__button/video__button.css';
+@import 'blocks/video/__time/video__time.css';
+@import 'blocks/video/__item-title/video__item-title.css';
+@import 'blocks/video/__item-description/video__item-description.css';
+@import 'blocks/video/__director/video__director.css';
+
+
+@import 'blocks/comments/comments.css';
+@import 'blocks/comments/__title/comments__title.css';
+@import 'blocks/comments/__list/comments__list.css';
+@import 'blocks/comments/__item/comments__item.css';
+@import 'blocks/comments/__photo/comments__photo.css';
+@import 'blocks/comments/__image/comments__image.css';
+@import 'blocks/comments/__text/comments__text.css';
+@import 'blocks/comments/__author/comments__author.css';
+
+
+@import 'blocks/cover/cover.css';
+@import 'blocks/cover/__title/cover__title.css';
+@import 'blocks/cover/__description/cover__description.css';
+
+
+@import 'blocks/footer/footer.css';
+@import 'blocks/footer/__list/footer__list.css';
+@import 'blocks/footer/__item/footer__item.css';
+@import 'blocks/footer/__copyright/footer__copyright.css';
+
+
+

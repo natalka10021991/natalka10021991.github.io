@@ -24,13 +24,13 @@ ul {
 
 .header {
   padding-top: 20px;
+  margin-bottom: 26px;
 }
 
 .container {
   display: flex;
-  width: 1170px;
+  max-width: 1170px;
   margin: 0 auto;
-  margin-bottom: 30px;
   justify-content: space-between;
 }
 
@@ -40,10 +40,15 @@ ul {
   text-decoration: none;
 }
 
+.logo__img {
+ margin-bottom: 5px;
+}
+
 .logo__slogan {
-  font-family: 'roboto_cnbold';
+  font-family: 'helioscond-bold';
   color: #000;
   font-size: 12px;
+  letter-spacing: 0.5px;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
@@ -54,11 +59,16 @@ ul {
 }
 
 .header__item {
-  margin-right: 20px;
+  margin-right: 21px;
 }
 
 .header__item:last-child {
   margin-right: 0;
+}
+
+.header__link {
+ text-decoration: none;
+ color: #252525;
 }
 
 .header__right {
@@ -110,17 +120,18 @@ ul {
 }
 
 .banner {
-  width: 250px;
+  width: 253px;
   height: 70px;
   background-color: #e2e2e2;
 }
 
 .shopping {
   display: flex;
+  margin-left: -22px;
 }
 
 .shopping__list {
-  margin-right: 30px;
+  margin-right: 32px;
 }
 
 .shopping__item {
@@ -133,7 +144,7 @@ ul {
 
 .shopping__link {
   color: #252525;
-  padding-left: 35px;
+  padding-left: 34px;
 }
 
 .shopping__link_basket {
@@ -145,13 +156,13 @@ ul {
 .shopping__link_star {
   background-image: url(img/star.png);
   background-repeat: no-repeat;
-  background-position: 8px 0;
+  background-position: 7px 1px;
 }
 
 .shopping__link_weigther {
   background-image: url(img/weigther.png);
   background-repeat: no-repeat;
-  background-position: -5px -15px;
+  background-position: -6px -15px;
 }
 
 .shopping__images-list {
@@ -159,7 +170,7 @@ ul {
 }
 
 .shopping__images-item {
-  margin-right: 10px;
+  margin-right: 14px;
 }
 
 .shopping__images-item:last-child {
@@ -171,7 +182,7 @@ ul {
   align-items: center;
   justify-content: center;
   width: 70px;
-  height: 70px;
+  height: 72px;
   border: 1px solid #d8d8d8;
 }
 
@@ -179,7 +190,8 @@ ul {
   font-size: 12px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
+  margin-top: -4px;
+  margin-bottom: 11px;
 }
 
 .contacts__working-hours-title {
@@ -192,8 +204,8 @@ ul {
   color: #252525;
   text-decoration: none;
   display: block;
-  margin-bottom: 3px;
-  padding-bottom: 15px;
+  margin-bottom: 2px;
+  padding-bottom: 13px;
   border-bottom: 1px solid #d7d7d7;
 }
 
@@ -242,24 +254,27 @@ ul {
   color: #fff;
   font-size: 14px;
   background-color: #000;
-  border-radius: 8px;
+  border-radius: 9px;
   overflow: hidden;
-  box-shadow: 0px 1px 5px 0px #ccc;
+  box-shadow: 0px 2px 1.5px rgba(0,0,0,0.25);
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  width: 1170px;
+  max-width: 1170px;
+  border-left: 10px solid #ffcc00;
+  border-right: 10px solid #ffcc00;
 }
 
 .nav__search {
-  width: 40px;
-  height: 39px;
+  width: 28px;
+  height: 34px;
   border: none;
   background-color: #ffcc00;
   background-image: url(img/search.png);
   background-repeat: no-repeat;
-  background-position: 10px 10px;
+  background-position: 1px 6px;
   cursor: pointer;
+  position: relative;
 }
 
 .nav__list {
@@ -267,7 +282,7 @@ ul {
 }
 
 .nav__item {
-  padding: 10px 15px;
+ padding: 7px 15px;
 }
 
 .nav__item:hover {
@@ -281,6 +296,7 @@ ul {
 .nav__link {
   color: #fff;
   text-decoration: none;
+  padding-left: 7px;
 }
 
 .nav__item_active {
@@ -297,5 +313,34 @@ ul {
   color: #333;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 10px;
+  padding: 7px 11px;
+  padding-left: 13px;
+}
+
+@media (max-width: 1230px) {
+  .banner {
+    display: none;
+  }
+
+  .header__item {
+    margin-right: 9px;
+ }
+
+ .header__link_hide {
+    display: none;
+ }
+
+ .shopping {
+    margin-left: -3px;
+ }
+
+  .nav__list {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+  }
+
+  .nav__item {
+    padding: 7px 0;
+  }
 }

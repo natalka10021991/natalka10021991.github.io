@@ -1,0 +1,10 @@
+.cover__description {
+	font-size: 18px;
+	line-height: 26px;
+	text-align: center;
+	max-width: 382px;
+	position: absolute;
+	bottom: 48px;
+	z-index: 2;
+
+}
