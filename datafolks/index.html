@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Pug-Sass Starter</title>
+    <!-- Styles-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="./assets/css/styles.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="app">
+      <header></header>
+      <section class="portfolio">
+        <div class="portfilio__header">
+          <h1 class="portfolio__title">Реализованные проекты</h1>
+          <p class="portfolio__subtitle">Коммуникационное агентство – часть многофункционального холдинга, объединяющего различные компании на территории России и ближнего зарубежья. </p>
+          <p class="portfolio__subtitle">Наши подходы к организации бизнеса и имеющиеся ресурсы позволяют одинаково эффективно обеспечивать реализацию как крупномасштабных федеральных или международных проектов, так и решать небольшие локальные задачи. Мы находимся в постоянном развитии, расширяя и укрепляя имеющиеся бизнес-направления, а также формируя новые.</p>
+        </div>
+        <ul class="portfolio__list">
+          <li class="portfolio__item">
+            <button class="portfolio__link" type="button" data-toggle="modal" data-target="#exampleModal" data-project="Республика Саха" data-url="assets/images/Layer21.png" data-info="Подробное описание проекта">Республика Саха</button><img src="assets/images/Layer21.png" alt="">
+          </li>
+          <li class="portfolio__item">
+            <button class="portfolio__link" type="button" data-toggle="modal" data-target="#exampleModal" data-project="Газпром" data-url="assets/images/Layer20.png" data-info="Подробное описание проекта">Газпром</button><img src="assets/images/Layer20.png" alt="">
+          </li>
+          <li class="portfolio__item">
+            <button class="portfolio__link" type="button" data-toggle="modal" data-target="#exampleModal" data-project="Nokia" data-url="assets/images/Layer18.png" data-info="Подробное описание проекта">Nokia</button><img src="assets/images/Layer18.png" alt="">
+          </li>
+        </ul>
+        <button class="portfolio__button">Загрузить еще</button>
+      </section>
+      <footer class="footer">
+        <div class="footer__container">
+          <section class="contacts">
+            <h2 class="contacts__title">Контакты</h2>
+            <p class="contacts__subtitle">Коммуникационное агентство</p>
+            <p class="contacts__address">344000, Россия, г. Ростов-на-Дону ул. Мира, д. 12 <br> Бизнес–центр «Рост», оф. 104</p>
+            <div class="contacts__row">
+              <ul class="contacts__phones">
+                <li class="contacts__phone-item"><a class="contacts__phone-link" href="tel:+78613001128">+7 (861) 300-11-28</a></li>
+                <li class="contacts__phone-item"><a class="contacts__phone-link" href="tel:+78613001152">+7 (861) 300-11-52</a></li>
+                <li class="contacts__phone-item"><a class="contacts__phone-link" href="tel:+78613001152">+7 (861) 300-11-52</a></li>
+              </ul>
+              <div class="contacts__others"><a class="contacts__email" href="#">Email: <br> info@example.com</a><a class="contacts__fb" href="#">Facebook.com/exampleagency</a></div>
+            </div>
+          </section>
+          <form class="form">
+            <input class="form__input" type="text" placeholder="Полное имя">
+            <input class="form__input" type="text" placeholder="E-mail">
+            <input class="form__input" type="text" placeholder="Телефон">
+            <textarea class="form__textarea" placeholder="Пожалуйста, опишите задачу"></textarea><a class="form__policy" href="#">Политика обработки персональных данных</a>
+            <button class="form__button" type="submit">Отправить заявку</button>
+          </form>
+        </div>
+      </footer>
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">О проекте</h5>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <h2 id="project-name"></h2>
+                  <p id="project-info"></p><img id="project-img" scr="" alt="">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button class="modal__button" type="button" data-dismiss="modal">Закрыть</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer></footer>
+    </div>
+    <!-- Scripts-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="./assets/js/scripts.min.js"></script>
+  </body>
+</html>
